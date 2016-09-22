@@ -1,0 +1,29 @@
+header.navbar .img-avatar {
+    height: 36px;
+    margin: -3px 10px 0 10px;
+}
+
+nav.sidebar-nav {
+    .form-control {
+        border: 0;
+        background: darken($sidebar-bg,10%);
+        color: #fff;
+
+        &::-webkit-input-placeholder { color: rgba(255,255,255,.7); }
+        &:-moz-placeholder { color: rgba(255,255,255,.7); }
+        &::-moz-placeholder { color: rgba(255,255,255,.7); }
+        &:-ms-input-placeholder { color: rgba(255,255,255,.7); }
+    }
+}
+
+.card {
+    border-top-width: 0;
+    border-bottom-width: 2 * $card-border-width;
+}
+
+.aside-menu {
+    .nav-tabs .nav-link,
+    .callout {
+        border-radius: 0;
+    }
+}
