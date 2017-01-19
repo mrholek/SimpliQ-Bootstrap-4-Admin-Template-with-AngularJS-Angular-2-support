@@ -1,18 +1,21 @@
 <!-- Navbar -->
 <div ng-include="'views/common/navbar.html'"></div>
 
-<!-- Navigation -->
-<div ng-include="'views/common/sidebar-nav.html'"></div>
+<div class="app-body">
+    <!-- Navigation -->
+    <div ng-include="'views/common/sidebar-nav.html'"></div>
 
-<!-- Main content -->
-<main class="main">
-    <div class="container-fluid pt-2">
-        <ui-view></ui-view>
-    </div>
-    <!-- /.conainer-fluid -->
-</main>
+    <!-- Main content -->
+    <main class="main">
+        <div class="container-fluid pt-2">
+            <ui-view></ui-view>
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
 
 
+
+</div>
 
 <!-- Footer -->
 <div ng-include="'views/common/footer.html'"></div>

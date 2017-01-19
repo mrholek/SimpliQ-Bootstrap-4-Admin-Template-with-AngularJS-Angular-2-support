@@ -12,23 +12,23 @@ var grayLighter =   '#e9ebec';
 var grayLightest =  '#f9f9f9';
 
 angular
-    .module('app', [
-        'ui.router',
-        'oc.lazyLoad',
-        'pascalprecht.translate',
-        'ncy-angular-breadcrumb',
-        'angular-loading-bar',
-        'ngSanitize',
-        'ngAnimate'
-    ])
-    .config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
-        cfpLoadingBarProvider.includeSpinner = false;
-        cfpLoadingBarProvider.latencyThreshold = 1;
-    }])
-    .run(['$rootScope', '$state', '$stateParams', function($rootScope, $state, $stateParams) {
-        $rootScope.$on('$stateChangeSuccess',function(){
-            document.body.scrollTop = document.documentElement.scrollTop = 0;
-        });
-        $rootScope.$state = $state;
-        return $rootScope.$stateParams = $stateParams;
-    }]);
+.module('app', [
+  'ui.router',
+  'oc.lazyLoad',
+  'pascalprecht.translate',
+  'ncy-angular-breadcrumb',
+  'angular-loading-bar',
+  'ngSanitize',
+  'ngAnimate'
+])
+.config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
+  cfpLoadingBarProvider.includeSpinner = false;
+  cfpLoadingBarProvider.latencyThreshold = 1;
+}])
+.run(['$rootScope', '$state', '$stateParams', function($rootScope, $state, $stateParams) {
+  $rootScope.$on('$stateChangeSuccess',function(){
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  });
+  $rootScope.$state = $state;
+  return $rootScope.$stateParams = $stateParams;
+}]);
