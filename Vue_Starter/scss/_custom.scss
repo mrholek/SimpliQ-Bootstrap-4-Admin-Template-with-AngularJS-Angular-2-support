@@ -1,0 +1,37 @@
+header.navbar > .img-avatar {
+    height: 36px;
+    margin: -3px 10px 0 10px;
+}
+
+nav.sidebar-nav {
+    .form-control {
+        border: 0;
+        background: darken($sidebar-bg,10%);
+        color: #fff;
+
+        &::-webkit-input-placeholder { color: rgba(255,255,255,.7); }
+        &:-moz-placeholder { color: rgba(255,255,255,.7); }
+        &::-moz-placeholder { color: rgba(255,255,255,.7); }
+        &:-ms-input-placeholder { color: rgba(255,255,255,.7); }
+    }
+}
+
+.card, .social-box {
+    border-top-width: 0;
+    border-bottom-width: 2 * $card-border-width;
+}
+
+[class*="card-outline-"] {
+    border-top-width: 1px !important;
+}
+
+[class*="card-accent-"] {
+    border-top-width: 2px !important;
+}
+
+.aside-menu {
+    .nav-tabs .nav-link,
+    .callout {
+        border-radius: 0;
+    }
+}
